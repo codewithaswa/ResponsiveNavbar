@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar - Codewith Aswa.</title>
+
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <!-- Logo -->
+      <a href="#" class="logo">Codewith Aswa.</a>
+
+      <!-- Hamburger Menu -->
+      <div class="menu-toggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Menu -->
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Work</a></li>
+      </ul>
+    </header>
+
+    <section>
+      <h1>Responsive Navigation Bar</h1>
+    </section>
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle input");
+      const nav = document.querySelector("header ul");
+
+      menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("slide");
+      });
+    </script>
+  </body>
+</html>
